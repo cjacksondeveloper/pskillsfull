@@ -1,0 +1,28 @@
+{
+  "name": "pskills",
+  "version": "1.0.0",
+  "description": "This app contains two user types. A prison admin (who has the ability to log in) and a single user (no need to log in so no need for user data to be persisted on this user type) who can view posted profiles by prison.",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run client\""
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtb36688/pskillsfull.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtb36688/pskillsfull/issues"
+  },
+  "homepage": "https://github.com/jtb36688/pskillsfull#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
